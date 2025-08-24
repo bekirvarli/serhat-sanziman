@@ -1,0 +1,108 @@
+.footer {
+  background-color: #222; /* koyu gri */
+  color: #fff;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  flex: 1;
+  max-width: 300px;
+}
+
+.footer-logo img {
+  width: 200px;
+  margin-bottom: 20px;
+  filter: invert(1);
+}
+
+.footer-logo p {
+  line-height: 1.6;
+  font-size: 15px;
+  color: #ccc;
+}
+
+/* Hızlı linkler */
+.footer-links {
+  flex: 1;
+  max-width: 200px;
+}
+
+.footer-links h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.footer-links ul li::before {
+  content: "•";
+  color: #ff9900;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ff9900;
+}
+
+/* İletişim kısmı */
+.footer-contact {
+  flex: 1;
+  max-width: 250px;
+}
+
+.footer-contact h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #ccc;
+}
+
+.footer-contact li i {
+  color: #ff9900;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Alt telif yazısı */
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  background-color: #111;
+  color: #777;
+}

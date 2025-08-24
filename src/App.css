@@ -1,0 +1,25 @@
+/* Tüm sayfa arka planı */
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.app-background {
+  min-height: 100vh;
+  background-image: url("../src/assets/backround.jpg"); /* fotoğraf yolu */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* İçerik kısmı */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff; /* fotoğrafın altındaki sayfa kısmı beyaz */
+}

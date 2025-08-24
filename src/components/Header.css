@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 150px;
+  backdrop-filter: blur(5px);
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding: 0 150px;
+  margin-top: 15px;
+  margin-left: 50px;
+  height: 300px;
+  margin-right: 70px;
+  filter: invert(1);
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9900;
+}
+
+.right-section .pricing-btn {
+  margin-right: 300px;
+  padding: 10px 20px;
+  background-color: #ff9900;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.right-section .pricing-btn:hover {
+  background-color: #ffffff;
+  color: #ff9900;
+}
+
+/* --- Responsive düzen --- */
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .left-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    padding: 0;
+    margin: 0 0 20px 0;
+    height: 200px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .right-section .pricing-btn {
+    margin: 15px 0 0 0;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
